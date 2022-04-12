@@ -2,7 +2,7 @@ package se.lexicon.rajashree;
 
 public class BookRepository {
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Book book1 = new Book("COREJAVA-1", "RAJASHREE", "JAVA", "BOOK");
         Book book2 = new Book("COREJAVA-2", "RAJASHREE", "JAVA", "BOOK");
         Book book3 = new Book("COREJAVA-3", "RAJASHREE", "JAVA", "BOOK");
@@ -59,4 +59,6 @@ public class BookRepository {
 
         }
     }
+
+     */
 }

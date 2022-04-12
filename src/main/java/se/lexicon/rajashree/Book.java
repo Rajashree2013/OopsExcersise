@@ -3,11 +3,11 @@ package se.lexicon.rajashree;
 public class Book {
 
     public String bookName;
-    public String bookAuthor;
+    public Author bookAuthor;
     public String bookTitle;
     public String bookDescription;
 
-    public Book(String bookName, String bookAuthor, String bookTitle, String bookDescription) {
+    public Book(String bookName, Author bookAuthor, String bookTitle, String bookDescription) {
         this.bookName = bookName;
         this.bookAuthor = bookAuthor;
         this.bookTitle = bookTitle;
@@ -22,11 +22,11 @@ public class Book {
         this.bookName = bookName;
     }
 
-    public String getBookAuthor() {
+    public Author getBookAuthor() {
         return bookAuthor;
     }
 
-    public void setBookAuthor(String bookAuthor) {
+    public void setBookAuthor(Author bookAuthor) {
         this.bookAuthor = bookAuthor;
     }
 
@@ -46,13 +46,9 @@ public class Book {
         this.bookDescription = bookDescription;
     }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "bookName='" + bookName + '\'' +
-                ", bookAuthor='" + bookAuthor + '\'' +
-                ", bookTitle='" + bookTitle + '\'' +
-                ", bookDescription='" + bookDescription + '\'' +
-                '}';
+    public void getAuthorDetails(){
+        System.out.println("Author name "+ bookAuthor.getAuthorName()+ "Author Id "+bookAuthor.getAuthorId());
     }
+
+
 }

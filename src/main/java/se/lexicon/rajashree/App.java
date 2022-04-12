@@ -12,5 +12,16 @@ public class App {
         double area = rectangle.getArea(rectangle.getHeight(), rectangle.getWidth());
         System.out.println(area);
 
+
+
+        Author author1 = new Author(1,"test");
+
+        Book book1 = new Book("Test1",author1,"JAVA","Java");
+        author1.addBook(book1);
+        author1.getAllBooksByAuthor();
+        book1.getAuthorDetails();
+
+
+
     }
 }
