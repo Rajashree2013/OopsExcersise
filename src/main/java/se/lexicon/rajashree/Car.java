@@ -2,11 +2,14 @@ package se.lexicon.rajashree;
 
 public class Car {
     //id, year, model, colour, motorSize
-    private String id;
-    private int year;
-    private String model;
-    private String color;
-    private String motorSize;
+    private String id; // 1
+    private int year; // 2022 -> 2020
+    private String model; // volvo
+    private String color; // gray
+    private String motorSize; // 150
+
+    public Car() {
+    }
 
     public Car(String model, String motorSize) {
         this.model = model;
@@ -28,8 +31,8 @@ public class Car {
 
 
     // Methods
-    public void drive(Car car) {
-        System.out.println(car.model +" with motor "+ car.motorSize +" can drive now");
+    public void drive() {
+        System.out.println(model +" with motor "+ motorSize +" can drive now");
 
     }
 
